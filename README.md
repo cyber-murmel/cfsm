@@ -1,5 +1,5 @@
 # CFSM
-A Framework for creating Finite State Machines in C
+A lightweight state machine library in C
 
 ## How to use
 Example `parity.c`:
@@ -44,6 +44,8 @@ int main(int argc, char* argv[]) {
 ```
 
 ```bash
-$ gcc -I inc parity.c -o parity && ./parity 42
+$ git clone https://github.com/cyber-murmel/cfsm.git
+$ vim parity.c
+$ gcc -I cfsm/inc parity.c -o parity && ./parity 42
 ODD
 ```
