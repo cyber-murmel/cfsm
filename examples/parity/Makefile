@@ -5,10 +5,9 @@ CC = gcc
 LD = gcc
 
 INCDIRS  =  inc/
-INCDIRS  += $(wildcard lib/*/inc/)
+INCDIRS  += ../../inc/
 HEADERS  =  $(wildcard $(addsuffix *.h,$(INCDIRS)))
 SRCDIRS  =  src/
-SRCDIRS  += $(wildcard lib/*/src/)
 CFILES   =  $(wildcard $(addsuffix *.c,$(SRCDIRS)))
 OBJECTS  =  ${CFILES:%.c=$(BUILDDIR)/%.o}
 
